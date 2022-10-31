@@ -80,7 +80,9 @@ const Home: NextPage = () => {
           <div className={`${styles.heroContainer} header`} id="titleRf">
             <h1>Max Gary Foundation</h1>
             <h2>Grand Opening</h2>
-            <h3>We are excited to announce the launch of this foundation.</h3>
+            <h3>
+              We are excited to announce the launch of Max Gray foundation.
+            </h3>
             <div className={styles.heroButtonContainer}>
               <button>Stay tuned! We are already in development.</button>
               <Countdown date="2022-11-16T00:00:00"></Countdown>
