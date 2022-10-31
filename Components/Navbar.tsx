@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "../styles/Component.module.scss";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 const Navbar = () => {
   const ref = useRef(null);
@@ -10,7 +10,7 @@ const Navbar = () => {
     gsap.to("#desktopNav", {
       scrollTrigger: {
         trigger: "#desktopNav",
-        markers: true,
+        // markers: true,
         start: "1000%",
         end: "100%",
         toggleActions: "play reverse",
@@ -25,7 +25,7 @@ const Navbar = () => {
           }),
       },
     });
-  }, [ref]);
+  }, [ref, ScrollTrigger]);
 
   const [toggle, setToggle] = useState<boolean>(false);
   return (

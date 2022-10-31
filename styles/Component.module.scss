@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
   @media screen and (max-width: 1224px) {
     display: none;
   }
@@ -171,8 +172,8 @@
     }
   }
   .right {
-    display: flex;
-    align-items: flex-end;
+    // display: flex;
+    // align-items: flex-end;
     background-color: #fff;
     width: 40%;
     display: cover;

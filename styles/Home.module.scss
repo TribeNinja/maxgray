@@ -75,11 +75,16 @@
     }
   }
   .maxImage {
-    height: inherit;
+    height: 100%;
     width: 40%;
-    background-image: url("/max.jpg");
+    // background-image: url("/max.jpg");
     background-size: cover;
+    overflow: hidden;
     background-position: 60% 0;
+    padding: 0;
+    z-index: 0;
+    background-color: #000000;
+
     @media screen and (max-width: 1224px) {
       width: 100vw;
     }
@@ -137,6 +142,7 @@
     }
   }
   .aboutContainer {
+    opacity: 0;
     width: 50%;
     height: 100%;
     display: flex;
