@@ -79,7 +79,7 @@ const Home: NextPage = () => {
         <section className={styles.section1}>
           <div className={`${styles.heroContainer} header`} id="titleRf">
             <h1>Max Gary Foundation</h1>
-            <h2>Grand Opening</h2>
+            <h2>Coming Soon</h2>
             <h3>
               We are excited to announce the launch of Max Gray foundation.
             </h3>
