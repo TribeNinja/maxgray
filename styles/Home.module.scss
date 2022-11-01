@@ -429,7 +429,48 @@
 }
 
 .section7 {
-  height: 60vh;
+  height: 50vh;
   width: 100%;
-  background-color: #171717;
+  background-color: #0f0f0f;
+  display: grid;
+  padding: 0 5%;
+  grid-template-rows: 80% 20%;
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    div {
+      height: 50%;
+      h3 {
+        color: #e1dcca;
+      }
+      :last-child {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      text-indent: none;
+      padding: 0;
+      align-items: flex-start;
+      margin: 0;
+      line-height: 30px;
+      font-weight: 100;
+    }
+    .footerLogo {
+      width: 20%;
+    }
+    // background-color: #000000;
+  }
+  .bottom {
+    border-top: 1px solid #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e1dcca;
+  }
 }

@@ -12,14 +12,9 @@ import { gsap } from "gsap";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Countdown from "react-countdown";
-
-import {
-  AiFillInstagram,
-  AiTwotoneMail,
-  AiOutlineWhatsApp,
-} from "react-icons/ai";
 import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Footer from "../Components/Footer";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home: NextPage = () => {
@@ -37,35 +32,35 @@ const Home: NextPage = () => {
       { opacity: 1, y: 0, duration: 1 }
     );
     // HeroSlogan
-    // gsap.to("#about", {
-    //   scrollTrigger: {
-    //     trigger: "#about",
-    //     // markers: true,
-    //     start: "-25%",
-    //     end: "-25%",
-    //     toggleActions: "play reverse",
-    //     onEnter: () =>
-    //       gsap.fromTo(
-    //         "#about",
-    //         {
-    //           opacity: 0,
-    //           x: 200,
-    //           duration: 1,
-    //         },
-    //         { opacity: 1, x: 0, duration: 1 }
-    //       ),
-    //     onEnterBack: () =>
-    //       gsap.fromTo(
-    //         "#about",
-    //         {
-    //           opacity: 1,
-    //           x: 0,
-    //           duration: 1,
-    //         },
-    //         { opacity: 0, x: 200, duration: 1 }
-    //       ),
-    //   },
-    // });
+    gsap.to("#about", {
+      scrollTrigger: {
+        trigger: "#about",
+        markers: true,
+        start: "-25%",
+        end: "-25%",
+        toggleActions: "play reverse",
+        onEnter: () =>
+          gsap.fromTo(
+            "#about",
+            {
+              opacity: 0,
+              x: 200,
+              duration: 1,
+            },
+            { opacity: 1, x: 0, duration: 1 }
+          ),
+        onEnterBack: () =>
+          gsap.fromTo(
+            "#about",
+            {
+              opacity: 1,
+              x: 0,
+              duration: 1,
+            },
+            { opacity: 0, x: 200, duration: 1 }
+          ),
+      },
+    });
   }, [titleRef, ScrollTrigger]);
   return (
     <div className={styles.container} ref={titleRef}>
@@ -98,7 +93,7 @@ const Home: NextPage = () => {
           content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
         />
       </Head>
-      {/* <Navbar /> */}
+      <Navbar />
       <main className={styles.mainContainer}>
         <section className={styles.section1}>
           <div className={`${styles.heroContainer} header`} id="titleRf">
@@ -170,7 +165,7 @@ const Home: NextPage = () => {
           </div>
           {/* <Image className={styles.maxImage} src={"/max.jpg"}></Image> */}
         </section>
-        {/* <section className={styles.section2}>
+        <section className={styles.section2}>
           <h1>Choose a way to help the people you care about</h1>
           <div className={styles.cardContainer}>
             <Cards />
@@ -179,8 +174,7 @@ const Home: NextPage = () => {
           </div>
         </section>
         <section className={styles.section3} ref={aboutRef}>
-          <div className={styles.section3Picture}>
-          </div>
+          <div className={styles.section3Picture}></div>
           <div className={styles.aboutContainer} id="about">
             <h1>Join the platform dedicated to helping people</h1>
             <p>
@@ -229,18 +223,6 @@ const Home: NextPage = () => {
           <div className={styles.formLeft}>
             <h1>How can we help you?</h1>
             <p>Feel free to contact us whenever you want.</p>
-            <div className={styles.contactInfo}>
-              <AiFillInstagram size={30} />
-              <p>@maxgrayfoundation</p>
-            </div>
-            <div className={styles.contactInfo}>
-              <AiOutlineWhatsApp size={30} />
-              <p>1231234-5678</p>
-            </div>
-            <div className={styles.contactInfo}>
-              <AiTwotoneMail size={30} />
-              <p>mgfoundation@gmail.com</p>
-            </div>
           </div>
           <div className={styles.formRight}>
             <p>
@@ -256,7 +238,8 @@ const Home: NextPage = () => {
               <input type="submit" value="Submit" />
             </form>
           </div>
-        </section> */}
+        </section>
+        <Footer />
       </main>
     </div>
   );

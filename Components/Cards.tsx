@@ -17,10 +17,10 @@ const Cards = () => {
         </div>
         <div className={styles.right}>
           <Image
-            src="/testimonial-1.png"
+            src="/testimonial-1.jpg"
             alt="testimonial"
-            width={600}
-            height={450}
+            width={208}
+            height={371}
             layout="responsive"
             loading="lazy"
           />

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "../styles/Component.module.scss";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Link from "next/link";
 // gsap.registerPlugin(ScrollTrigger);
 
 const Navbar = () => {
@@ -10,9 +11,11 @@ const Navbar = () => {
     gsap.to("#desktopNav", {
       scrollTrigger: {
         trigger: "#desktopNav",
-        // markers: true,
+        markers: true,
         start: "1000%",
         end: "100%",
+        // start: "top center",
+        // end: "100%",
         toggleActions: "play reverse",
         onEnter: () =>
           gsap.to("#desktopNav", {
@@ -36,8 +39,12 @@ const Navbar = () => {
         </div>
         <div className={styles.menuContainer}>
           <ul>
-            <li>Home</li>
-            <li>About Us</li>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/about">About Us</Link>
+            </li>
             <li>Blog/Events</li>
             <li>Artwork</li>
           </ul>
