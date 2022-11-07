@@ -1,0 +1,12 @@
+.artworkContainer {
+  height: 200vh;
+  width: 100vw;
+  background-color: #09183a;
+  padding: 5%;
+  .artworkWrapper {
+    background-color: #f2f2f2;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+}

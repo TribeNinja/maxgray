@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Cards from "../Components/Cards";
 import MiniTag from "../Components/MiniTag";
 import Navbar from "../Components/Navbar";
 import styles from "../styles/Home.module.scss";
@@ -15,6 +14,7 @@ import Countdown from "react-countdown";
 import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Footer from "../Components/Footer";
+import Link from "next/link";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home: NextPage = () => {
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
     gsap.to("#about", {
       scrollTrigger: {
         trigger: "#about",
-        markers: true,
+        // markers: true,
         start: "-25%",
         end: "-25%",
         toggleActions: "play reverse",
@@ -166,24 +166,24 @@ const Home: NextPage = () => {
           {/* <Image className={styles.maxImage} src={"/max.jpg"}></Image> */}
         </section>
         <section className={styles.section2}>
-          <h1>Choose a way to help the people you care about</h1>
+          <h1>Get to know more about Max.</h1>
           <div className={styles.cardContainer}>
-            <Cards />
-            <Cards />
-            <Cards />
+            <Link href="/about">
+              <h1>Know More</h1>
+            </Link>
           </div>
         </section>
         <section className={styles.section3} ref={aboutRef}>
-          <div className={styles.section3Picture}></div>
+          {/* <div className={styles.section3Picture}></div> */}
           <div className={styles.aboutContainer} id="about">
-            <h1>Join the platform dedicated to helping people</h1>
+            <h1>Here lies his passion</h1>
             <p>
-              Max Gray Foundation is a community ready to help people that need
-              some care or attention. In it you can find several options of
-              helping people in the search for those that are lost, so that
-              together we can ensure that their mental health is in their own
-              great hands.
+              Max was a very creative person. The different genres of designs he
+              created, mixed with the abstract effect, brought life to his art.
             </p>
+            <Link href="artwork">
+              <p className={styles.pButton}>Check out his artworks </p>
+            </Link>
           </div>
         </section>
         <section className={styles.section4}>

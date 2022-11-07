@@ -19,7 +19,7 @@ const Navbar = () => {
         toggleActions: "play reverse",
         onEnter: () =>
           gsap.to("#desktopNav", {
-            backgroundImage: "linear-gradient(to bottom, #093a3a, #000)",
+            backgroundImage: "linear-gradient(to bottom, #09183a, #000)",
           }),
         onEnterBack: () =>
           gsap.to("#desktopNav", {
@@ -46,7 +46,9 @@ const Navbar = () => {
               <Link href="/about">About Us</Link>
             </li>
             <li>Blog/Events</li>
-            <li>Artwork</li>
+            <li>
+              <Link href="/artwork">Artwork</Link>
+            </li>
           </ul>
         </div>
         <div className={styles.loginContainer}>
