@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Cards from "../Components/Cards";
 import MiniTag from "../Components/MiniTag";
 import Navbar from "../Components/Navbar";
 import styles from "../styles/Home.module.scss";
@@ -36,7 +35,6 @@ const Home: NextPage = () => {
       },
       { opacity: 1, y: 0, duration: 1 }
     );
-    // HeroSlogan
     // gsap.to("#about", {
     //   scrollTrigger: {
     //     trigger: "#about",
@@ -109,10 +107,9 @@ const Home: NextPage = () => {
             </h3>
             <div className={styles.heroButtonContainer}>
               <button>Stay tuned! We are already in development.</button>
-              <div>
-                <Countdown date="2022-11-16T00:00:00"></Countdown>
-              </div>
-              {/* <button>Know More</button> */}
+
+              <Countdown date="2022-11-16T00:00:00"></Countdown>
+
             </div>
           </div>
 
@@ -125,13 +122,12 @@ const Home: NextPage = () => {
               renderIndicator={() => false}
               showStatus={false}
               infiniteLoop={true}
+              showThumbs={false}
             >
               <Image
                 src={main}
                 className={styles.maxImage}
                 alt="max"
-                height={1080}
-                width={768}
                 style={{
                   backgroundSize: "cover",
                   width: "60%",
@@ -144,8 +140,6 @@ const Home: NextPage = () => {
                 src={main2}
                 className={styles.maxImage}
                 alt="max"
-                height={1080}
-                width={768}
                 style={{
                   backgroundSize: "cover",
                   width: "60%",
@@ -158,8 +152,6 @@ const Home: NextPage = () => {
                 src={main3}
                 className={styles.maxImage}
                 alt="max"
-                height={1080}
-                width={768}
                 style={{
                   backgroundSize: "cover",
                   width: "60%",
@@ -170,95 +162,7 @@ const Home: NextPage = () => {
               />
             </Carousel>
           </div>
-          {/* <Image className={styles.maxImage} src={"/max.jpg"}></Image> */}
         </section>
-        {/* <section className={styles.section2}>
-          <h1>Choose a way to help the people you care about</h1>
-          <div className={styles.cardContainer}>
-            <Cards />
-            <Cards />
-            <Cards />
-          </div>
-        </section>
-        <section className={styles.section3} ref={aboutRef}>
-          <div className={styles.section3Picture}>
-          </div>
-          <div className={styles.aboutContainer} id="about">
-            <h1>Join the platform dedicated to helping people</h1>
-            <p>
-              Max Gray Foundation is a community ready to help people that need
-              some care or attention. In it you can find several options of
-              helping people in the search for those that are lost, so that
-              together we can ensure that their mental health is in their own
-              great hands.
-            </p>
-          </div>
-        </section>
-        <section className={styles.section4}>
-          <div className={styles.sectionWrapper}>
-            <div className={styles.section4Left}>
-              <h1>What makes us different from others</h1>
-              <p>
-                Here the important thing is the protection and felicity of the
-                people. At Max Gray Foundation it is possible to quickly and
-                easily create new alerts for lost animals, in addition to being
-                able to find organizations that can help people with whatever
-                they need.
-              </p>
-            </div>
-            <div className={styles.section4Right}>
-              <MiniTag heading="Active Support" description="" />
-              <MiniTag heading="Free Functions" description="" />
-              <MiniTag heading="Quick Control" description="" />
-              <MiniTag heading="Simple Interface" description="" />
-            </div>
-          </div>
-        </section>
-        <section className={styles.section5}>
-          <div className={styles.donateText}>
-            <h1>Ready to Donate?</h1>
-            <p>
-              Helping people that need care to be protected, well taken care of
-              and happy, offering all the necessary support so that this can
-              become more and more reality.
-            </p>
-          </div>
-          <div className={styles.donateButton}>
-            <button>Start Now</button>
-          </div>
-        </section>
-        <section className={styles.section6}>
-          <div className={styles.formLeft}>
-            <h1>How can we help you?</h1>
-            <p>Feel free to contact us whenever you want.</p>
-            <div className={styles.contactInfo}>
-              <AiFillInstagram size={30} />
-              <p>@maxgrayfoundation</p>
-            </div>
-            <div className={styles.contactInfo}>
-              <AiOutlineWhatsApp size={30} />
-              <p>1231234-5678</p>
-            </div>
-            <div className={styles.contactInfo}>
-              <AiTwotoneMail size={30} />
-              <p>mgfoundation@gmail.com</p>
-            </div>
-          </div>
-          <div className={styles.formRight}>
-            <p>
-              Compulsary<span style={{ color: "#ff0000" }}>*</span>
-            </p>
-            <form className={styles.formContainer}>
-              <div className={styles.formInputs}>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="address" placeholder="Address" />
-                <textarea placeholder="Message" />
-              </div>
-              <input type="submit" value="Submit" />
-            </form>
-          </div>
-        </section> */}
       </main>
     </div>
   );

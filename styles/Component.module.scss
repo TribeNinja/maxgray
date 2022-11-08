@@ -68,7 +68,7 @@
     right: 0;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to bottom, #093a3a, #000);
+    background-image: linear-gradient(to bottom, #09183a, #000);
 
     overflow: hidden;
     color: #ca267b;
@@ -123,7 +123,7 @@
   }
   .line {
     height: 10%;
-    background-color: #1d3c3d;
+    background-color: #09183a;
     width: 20%;
     margin: 1% 0;
     border-radius: 10px 0px 0px 10px;
@@ -156,7 +156,7 @@
     .tagline {
       height: 10%;
       min-width: 20%;
-      background-color: #1d3c3d;
+      background-color: #09183a;
       border-radius: 10px;
       display: flex;
       justify-content: center;
@@ -209,5 +209,54 @@
         width: 100%;
       }
     }
+  }
+}
+
+.footerContainer {
+  height: 50vh;
+  width: 100%;
+  background-color: #0f0f0f;
+  display: grid;
+  padding: 0 5%;
+  grid-template-rows: 80% 20%;
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div {
+      height: 30vh;
+    }
+
+    h3 {
+      color: #e1dcca;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      text-indent: none;
+      padding: 0;
+      align-items: flex-start;
+      margin: 0;
+      line-height: 30px;
+      font-weight: 100;
+    }
+    .lastColumn {
+      overflow: hidden;
+      img {
+        height: 20vh;
+      }
+    }
+    .footerLogo {
+      width: 20%;
+    }
+    // background-color: #000000;
+  }
+  .bottom {
+    border-top: 1px solid #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e1dcca;
   }
 }

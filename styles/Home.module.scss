@@ -19,7 +19,7 @@
 .section1 {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(to bottom, #093a3a, #000);
+  background-image: linear-gradient(to bottom, #09183a, #000);
   display: flex;
 
   @media screen and (max-width: 1224px) {
@@ -116,7 +116,8 @@
   padding: 10% 5%;
   h1 {
     margin: 0;
-    color: #1d3c3d;
+    font-size: 3em;
+    color: #09183a;
     @media screen and (max-width: 1224px) {
       font-size: 1.5em;
       text-align: center;
@@ -125,7 +126,7 @@
   .cardContainer {
     height: 90%;
     width: 100%;
-    // background-color: #e1dcca;
+    background-color: #e1dcca;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -136,8 +137,9 @@
 }
 
 .section3 {
-  height: 90vh;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
   background-image: url("/Background.jpg");
   background-size: contain;
   display: flex;
@@ -145,23 +147,10 @@
     flex-direction: column-reverse;
     height: 100vh;
   }
-  .section3Picture {
-    width: 50%;
-    height: 100%;
-    padding: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @media screen and (max-width: 1224px) {
-      width: 100%;
-    }
-    img {
-      width: 100%;
-    }
-  }
+
   .aboutContainer {
     opacity: 0;
-    width: 50%;
+    width: 50vw;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -173,10 +162,21 @@
       width: 100vw;
       padding: 5% 5%;
     }
+    .pButton {
+      background-color: #09183a;
+      height: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      color: #f1f1f1;
+      cursor: pointer;
+    }
     h1 {
       width: 100%;
       font-size: 3em;
       margin: 0;
+      color: #09183a;
       @media screen and (max-width: 1224px) {
         font-size: 2em;
         width: 100%;
@@ -190,6 +190,18 @@
         width: 100%;
       }
     }
+  }
+  .canvasContainer {
+    width: 60%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #09183a, #000);
+  }
+  .canvas {
+    background-image: linear-gradient(to bottom, #09183a, #000);
+    // background-color: orange;
+    // opacity: 0.8;
+    // width: 50vw;
+    height: 100vh;
   }
 }
 
@@ -251,7 +263,7 @@
 .section5 {
   height: 40vh;
   width: 100%;
-  background-image: linear-gradient(to bottom, #093a3a, #000);
+  background-image: linear-gradient(to bottom, #09183a, #000);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -287,7 +299,7 @@
       }
     }
   }
-  .donateButton {
+  .donateImg {
     height: 15%;
     width: 25%;
     display: flex;
@@ -296,9 +308,9 @@
     @media screen and (max-width: 1224px) {
       width: 100%;
     }
-    button {
+    img {
       width: 80%;
-      height: 100%;
+      // height: 100%;
       border-radius: 10px;
       background-color: #e1dcca;
       color: #1d3c3d;
@@ -420,7 +432,7 @@
         text-indent: 20px;
         border-radius: 10px;
         height: 20%;
-        background-color: #093a3a;
+        background-color: #09183a;
         outline: none;
         color: #093a3a;
       }
@@ -435,10 +447,4 @@
       }
     }
   }
-}
-
-.section7 {
-  height: 60vh;
-  width: 100%;
-  background-color: #171717;
 }
