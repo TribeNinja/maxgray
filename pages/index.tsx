@@ -107,7 +107,9 @@ const Home: NextPage = () => {
             </h3>
             <div className={styles.heroButtonContainer}>
               <button>Stay tuned! We are already in development.</button>
+
               <Countdown date="2022-11-16T00:00:00"></Countdown>
+
             </div>
           </div>
 
