@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import sign from "../public/max-sign.png";
-import styles from "../styles/Home.module.scss";
+import styles from "../styles/Component.module.scss";
 import {
   AiFillInstagram,
   AiTwotoneMail,
@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className={styles.section7}>
+    <footer className={styles.footerContainer}>
       <div className={styles.top}>
         <div className={styles.footerLogo}>
           <Image
@@ -43,14 +43,9 @@ const Footer = () => {
             <AiTwotoneMail size={30} />
           </div>
         </div>
-        <div>
+        <div className={styles.lastColumn}>
           <h3>Donate</h3>
-          <ul>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-          </ul>
+          <img src="./qrcode.png" />
         </div>
       </div>
       <div className={styles.bottom}>

@@ -11,10 +11,14 @@ import { gsap } from "gsap";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Countdown from "react-countdown";
+
+import {
+  AiFillInstagram,
+  AiTwotoneMail,
+  AiOutlineWhatsApp,
+} from "react-icons/ai";
 import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import Footer from "../Components/Footer";
-import Link from "next/link";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home: NextPage = () => {
@@ -31,36 +35,35 @@ const Home: NextPage = () => {
       },
       { opacity: 1, y: 0, duration: 1 }
     );
-    // HeroSlogan
-    gsap.to("#about", {
-      scrollTrigger: {
-        trigger: "#about",
-        // markers: true,
-        start: "-25%",
-        end: "-25%",
-        toggleActions: "play reverse",
-        onEnter: () =>
-          gsap.fromTo(
-            "#about",
-            {
-              opacity: 0,
-              x: 200,
-              duration: 1,
-            },
-            { opacity: 1, x: 0, duration: 1 }
-          ),
-        onEnterBack: () =>
-          gsap.fromTo(
-            "#about",
-            {
-              opacity: 1,
-              x: 0,
-              duration: 1,
-            },
-            { opacity: 0, x: 200, duration: 1 }
-          ),
-      },
-    });
+    // gsap.to("#about", {
+    //   scrollTrigger: {
+    //     trigger: "#about",
+    //     // markers: true,
+    //     start: "-25%",
+    //     end: "-25%",
+    //     toggleActions: "play reverse",
+    //     onEnter: () =>
+    //       gsap.fromTo(
+    //         "#about",
+    //         {
+    //           opacity: 0,
+    //           x: 200,
+    //           duration: 1,
+    //         },
+    //         { opacity: 1, x: 0, duration: 1 }
+    //       ),
+    //     onEnterBack: () =>
+    //       gsap.fromTo(
+    //         "#about",
+    //         {
+    //           opacity: 1,
+    //           x: 0,
+    //           duration: 1,
+    //         },
+    //         { opacity: 0, x: 200, duration: 1 }
+    //       ),
+    //   },
+    // });
   }, [titleRef, ScrollTrigger]);
   return (
     <div className={styles.container} ref={titleRef}>
@@ -93,7 +96,7 @@ const Home: NextPage = () => {
           content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
         />
       </Head>
-      <Navbar />
+      {/* <Navbar /> */}
       <main className={styles.mainContainer}>
         <section className={styles.section1}>
           <div className={`${styles.heroContainer} header`} id="titleRf">
@@ -105,7 +108,6 @@ const Home: NextPage = () => {
             <div className={styles.heroButtonContainer}>
               <button>Stay tuned! We are already in development.</button>
               <Countdown date="2022-11-16T00:00:00"></Countdown>
-              {/* <button>Know More</button> */}
             </div>
           </div>
 
@@ -118,13 +120,12 @@ const Home: NextPage = () => {
               renderIndicator={() => false}
               showStatus={false}
               infiniteLoop={true}
+              showThumbs={false}
             >
               <Image
                 src={main}
                 className={styles.maxImage}
                 alt="max"
-                height={1080}
-                width={768}
                 style={{
                   backgroundSize: "cover",
                   width: "60%",
@@ -137,8 +138,6 @@ const Home: NextPage = () => {
                 src={main2}
                 className={styles.maxImage}
                 alt="max"
-                height={1080}
-                width={768}
                 style={{
                   backgroundSize: "cover",
                   width: "60%",
@@ -151,8 +150,6 @@ const Home: NextPage = () => {
                 src={main3}
                 className={styles.maxImage}
                 alt="max"
-                height={1080}
-                width={768}
                 style={{
                   backgroundSize: "cover",
                   width: "60%",
@@ -163,83 +160,7 @@ const Home: NextPage = () => {
               />
             </Carousel>
           </div>
-          {/* <Image className={styles.maxImage} src={"/max.jpg"}></Image> */}
         </section>
-        <section className={styles.section2}>
-          <h1>Get to know more about Max.</h1>
-          <div className={styles.cardContainer}>
-            <Link href="/about">
-              <h1>Know More</h1>
-            </Link>
-          </div>
-        </section>
-        <section className={styles.section3} ref={aboutRef}>
-          {/* <div className={styles.section3Picture}></div> */}
-          <div className={styles.aboutContainer} id="about">
-            <h1>Here lies his passion</h1>
-            <p>
-              Max was a very creative person. The different genres of designs he
-              created, mixed with the abstract effect, brought life to his art.
-            </p>
-            <Link href="artwork">
-              <p className={styles.pButton}>Check out his artworks </p>
-            </Link>
-          </div>
-        </section>
-        <section className={styles.section4}>
-          <div className={styles.sectionWrapper}>
-            <div className={styles.section4Left}>
-              <h1>What makes us different from others</h1>
-              <p>
-                Here the important thing is the protection and felicity of the
-                people. At Max Gray Foundation it is possible to quickly and
-                easily create new alerts for lost animals, in addition to being
-                able to find organizations that can help people with whatever
-                they need.
-              </p>
-            </div>
-            <div className={styles.section4Right}>
-              <MiniTag heading="Active Support" description="" />
-              <MiniTag heading="Free Functions" description="" />
-              <MiniTag heading="Quick Control" description="" />
-              <MiniTag heading="Simple Interface" description="" />
-            </div>
-          </div>
-        </section>
-        <section className={styles.section5}>
-          <div className={styles.donateText}>
-            <h1>Ready to Donate?</h1>
-            <p>
-              Helping people that need care to be protected, well taken care of
-              and happy, offering all the necessary support so that this can
-              become more and more reality.
-            </p>
-          </div>
-          <div className={styles.donateButton}>
-            <button>Start Now</button>
-          </div>
-        </section>
-        <section className={styles.section6}>
-          <div className={styles.formLeft}>
-            <h1>How can we help you?</h1>
-            <p>Feel free to contact us whenever you want.</p>
-          </div>
-          <div className={styles.formRight}>
-            <p>
-              Compulsary<span style={{ color: "#ff0000" }}>*</span>
-            </p>
-            <form className={styles.formContainer}>
-              <div className={styles.formInputs}>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="address" placeholder="Address" />
-                <textarea placeholder="Message" />
-              </div>
-              <input type="submit" value="Submit" />
-            </form>
-          </div>
-        </section>
-        <Footer />
       </main>
     </div>
   );
