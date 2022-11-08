@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { Suspense, useRef } from "react";
+import React from "react";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import styles from "../styles/Artwork.module.scss";
