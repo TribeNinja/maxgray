@@ -4,12 +4,12 @@ import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import styles from "../styles/Artwork.module.scss";
 
-import main from "../public/Artwork/1.jpg";
-import main2 from "../public/Artwork/2.jpg";
-import main3 from "../public/Artwork/3.jpg";
-import main4 from "../public/Artwork/4.jpg";
-import main5 from "../public/Artwork/5.jpg";
-import main6 from "../public/Artwork/6.jpg";
+// import main from "../public/Artwork/1.jpg";
+// import main2 from "../public/Artwork/2.jpg";
+// import main3 from "../public/Artwork/3.jpg";
+// import main4 from "../public/Artwork/4.jpg";
+// import main5 from "../public/Artwork/5.jpg";
+// import main6 from "../public/Artwork/6.jpg";
 const artwork = () => {
   return (
     <>
