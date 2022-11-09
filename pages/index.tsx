@@ -1,7 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import MiniTag from "../Components/MiniTag";
-import Navbar from "../Components/Navbar";
 import styles from "../styles/Home.module.scss";
 import Image from "next/image";
 import main from "../public/max.jpg";
@@ -17,13 +15,14 @@ import {
   AiTwotoneMail,
   AiOutlineWhatsApp,
 } from "react-icons/ai";
-import { useEffect, useRef } from "react";
+import { Component, useEffect, useRef, useState } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home: NextPage = () => {
   const titleRef = useRef(null);
   const aboutRef = useRef(null);
+  useEffect(() => {});
   useEffect(() => {
     // Title Animation
     gsap.fromTo(
@@ -127,36 +126,18 @@ const Home: NextPage = () => {
                 src={main}
                 className={styles.maxImage}
                 alt="max"
-                style={{
-                  backgroundSize: "cover",
-                  width: "60%",
-                  height: "200vh",
-                  backgroundPosition: "60% 50%",
-                }}
                 layout="responsive"
               />
               <Image
                 src={main2}
                 className={styles.maxImage}
                 alt="max"
-                style={{
-                  backgroundSize: "cover",
-                  width: "60%",
-                  height: "200vh",
-                  backgroundPosition: "60% 50%",
-                }}
                 layout="responsive"
               />
               <Image
                 src={main3}
                 className={styles.maxImage}
                 alt="max"
-                style={{
-                  backgroundSize: "cover",
-                  width: "60%",
-                  height: "200vh",
-                  backgroundPosition: "60% 50%",
-                }}
                 layout="responsive"
               />
             </Carousel>

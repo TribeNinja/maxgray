@@ -19,13 +19,18 @@ import dynamic from "next/dynamic";
 gsap.registerPlugin(ScrollTrigger);
 
 const Gallery = dynamic(() => import("../Components/Gallery"), {
-  suspense: true,
-  // ssr: false,
+  // suspense: true,
+  ssr: false,
 });
+
+// const [st, setSt] = useState<Component>(null);
 
 const Demo: NextPage = () => {
   const titleRef = useRef(null);
   const aboutRef = useRef(null);
+  // useEffect(() => {
+  // setSt(<Gallery />);
+  // });
 
   useEffect(() => {
     // Title Animation
@@ -116,57 +121,55 @@ const Demo: NextPage = () => {
               {/* <button>Know More</button> */}
             </div>
           </div>
-          <Suspense fallback="Loading">
-            <div className={styles.maxImage}>
-              <Carousel
-                autoPlay
-                animationHandler="fade"
-                renderArrowNext={() => false}
-                renderArrowPrev={() => false}
-                renderIndicator={() => false}
-                showStatus={false}
-                infiniteLoop={true}
-              >
-                <Image
-                  src={main}
-                  className={styles.maxImage}
-                  alt="max"
-                  style={{
-                    backgroundSize: "cover",
-                    width: "60%",
-                    height: "200vh",
-                    backgroundPosition: "60% 50%",
-                  }}
-                  layout="responsive"
-                />
-                <Image
-                  src={main2}
-                  className={styles.maxImage}
-                  alt="max"
-                  style={{
-                    backgroundSize: "cover",
-                    width: "60%",
-                    height: "200vh",
-                    backgroundPosition: "60% 50%",
-                  }}
-                  layout="responsive"
-                />
-                <Image
-                  src={main3}
-                  className={styles.maxImage}
-                  alt="max"
-                  style={{
-                    backgroundSize: "cover",
-                    width: "60%",
-                    height: "200vh",
-                    backgroundPosition: "60% 50%",
-                  }}
-                  layout="responsive"
-                />
-              </Carousel>
-            </div>
-          </Suspense>
-          {/* <Image className={styles.maxImage} src={"/max.jpg"}></Image> */}
+          <div className={styles.maxImage}>
+            <Carousel
+              autoPlay
+              animationHandler="fade"
+              renderArrowNext={() => false}
+              renderArrowPrev={() => false}
+              renderIndicator={() => false}
+              showStatus={false}
+              infiniteLoop={true}
+              showThumbs={false}
+            >
+              <Image
+                src={main}
+                className={styles.maxImage}
+                alt="max"
+                style={{
+                  backgroundSize: "cover",
+                  width: "60%",
+                  height: "200vh",
+                  backgroundPosition: "60% 50%",
+                }}
+                layout="responsive"
+              />
+              <Image
+                src={main2}
+                className={styles.maxImage}
+                alt="max"
+                style={{
+                  backgroundSize: "cover",
+                  width: "60%",
+                  height: "200vh",
+                  backgroundPosition: "60% 50%",
+                }}
+                layout="responsive"
+              />
+              <Image
+                src={main3}
+                className={styles.maxImage}
+                alt="max"
+                style={{
+                  backgroundSize: "cover",
+                  width: "60%",
+                  height: "200vh",
+                  backgroundPosition: "60% 50%",
+                }}
+                layout="responsive"
+              />
+            </Carousel>
+          </div>
         </section>
         <section className={styles.section2}>
           <h1>Get to know more about Max.</h1>
@@ -228,7 +231,12 @@ const Demo: NextPage = () => {
             </p>
           </div>
           <div className={styles.donateImg}>
-            {/* <Image src="./qrcode.png" className={styles.imgWH} /> */}
+            <Image
+              src="/qrcode.png"
+              className={styles.imgWH}
+              width={1920}
+              height={1080}
+            />
           </div>
         </section>
         <section className={styles.section6}>
