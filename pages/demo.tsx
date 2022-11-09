@@ -178,9 +178,9 @@ const Demo: NextPage = () => {
         </section>
         <section className={styles.section3} ref={aboutRef}>
           <div className={styles.canvasContainer}>
-            {/* <Suspense fallback={null}>
+            <Suspense fallback={null}>
               <Gallery />
-            </Suspense> */}
+            </Suspense>
           </div>
           <div className={styles.aboutContainer} id="about">
             <h1>Lorem ipsum dolor sit amet.</h1>
