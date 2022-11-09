@@ -18,7 +18,7 @@ const artwork = () => {
         <div className={styles.artworkWrapper}>
           <h1>Max Artwork</h1>
           <div className={styles.showCase}>
-            <Image
+            {/* <Image
               src={main}
               alt="max"
               className={styles.Images}
@@ -59,7 +59,7 @@ const artwork = () => {
               className={styles.Images}
               layout="responsive"
               objectFit="contain"
-            />
+            /> */}
           </div>
         </div>
       </main>
