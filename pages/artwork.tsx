@@ -16,7 +16,7 @@ const artwork = () => {
       <Navbar />
       <main className={styles.artworkContainer}>
         <div className={styles.artworkWrapper}>
-          <h1>Max's Artwork</h1>
+          <h1>Max Artwork</h1>
           <div className={styles.showCase}>
             <Image
               src={main}
