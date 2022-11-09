@@ -230,7 +230,7 @@ const Demo: NextPage = () => {
             </p>
           </div>
           <div className={styles.donateImg}>
-            <img src="./qrcode.png" />
+            <Image src="./qrcode.png" />
           </div>
         </section>
         <section className={styles.section6}>
