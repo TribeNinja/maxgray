@@ -20,7 +20,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Gallery = dynamic(() => import("../Components/Gallery"), {
   suspense: true,
-  // ssr: false,
+  ssr: false,
 });
 
 const Demo: NextPage = () => {

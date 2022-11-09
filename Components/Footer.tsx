@@ -20,10 +20,8 @@ const Footer = () => {
             // height={280}
             // width={368}
             style={{
-              backgroundSize: "cover",
               width: "30%",
               minHeight: "20vh",
-              backgroundPosition: "60% 50%",
             }}
             layout="responsive"
           />
@@ -45,7 +43,7 @@ const Footer = () => {
         </div>
         <div className={styles.lastColumn}>
           <h3>Donate</h3>
-          <img src="./qrcode.png" />
+          {/* <Image src="./qrcode.png" /> */}
         </div>
       </div>
       <div className={styles.bottom}>
