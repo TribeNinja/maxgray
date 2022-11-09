@@ -69,7 +69,7 @@ const Demo: NextPage = () => {
           ),
       },
     });
-  }, [titleRef, ScrollTrigger]);
+  }, [titleRef]);
   return (
     <div className={styles.container} ref={titleRef}>
       <Head>
