@@ -26,10 +26,6 @@ const Gallery = dynamic(() => import("../Components/Gallery"), {
 const Demo: NextPage = () => {
   const titleRef = useRef(null);
   const aboutRef = useRef(null);
-  const [state, setState] = useState<boolean>(false);
-  useEffect(() => {
-    setState(true);
-  }, [Gallery]);
 
   useEffect(() => {
     // Title Animation
@@ -182,7 +178,9 @@ const Demo: NextPage = () => {
         </section>
         <section className={styles.section3} ref={aboutRef}>
           <div className={styles.canvasContainer}>
-            <Suspense fallback={null}>{state && <Gallery />}</Suspense>
+            <Suspense fallback={null}>
+              <Gallery />
+            </Suspense>
           </div>
           <div className={styles.aboutContainer} id="about">
             <h1>Lorem ipsum dolor sit amet.</h1>

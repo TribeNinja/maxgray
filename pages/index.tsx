@@ -64,7 +64,7 @@ const Home: NextPage = () => {
     //       ),
     //   },
     // });
-  }, [titleRef, ScrollTrigger]);
+  }, [titleRef]);
   return (
     <div className={styles.container} ref={titleRef}>
       <Head>
@@ -109,7 +109,6 @@ const Home: NextPage = () => {
               <button>Stay tuned! We are already in development.</button>
 
               <Countdown date="2022-11-16T00:00:00"></Countdown>
-
             </div>
           </div>
 
