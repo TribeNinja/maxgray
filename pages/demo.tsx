@@ -69,7 +69,7 @@ const Demo: NextPage = () => {
     // });
     setRehydration(true);
     // }, [titleRef, aboutRef]);
-  });
+  }, [rehydration]);
 
   if (!rehydration) {
     return null;

@@ -17,14 +17,14 @@ import {
 } from "react-icons/ai";
 import { Component, useEffect, useRef, useState } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 const Home: NextPage = () => {
   const [rehydration, setRehydration] = useState<boolean>(false);
 
   useEffect(() => {
     setRehydration(true);
-  });
+  }, [rehydration]);
 
   if (!rehydration) {
     return null;
