@@ -12,6 +12,7 @@ import { useSnapshot } from "valtio";
 // import { Minimap } from "./Minimap";
 import { state, damp } from "./util";
 import styles from "../styles/Home.module.scss";
+import dynamic from "next/dynamic";
 
 function Item({
   index,
