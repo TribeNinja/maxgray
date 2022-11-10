@@ -9,7 +9,7 @@ import {
   useScroll,
 } from "@react-three/drei";
 import { useSnapshot } from "valtio";
-// import { Minimap } from "./Minimap";
+import { Minimap } from "./Minimap";
 import { state, damp } from "./util";
 import styles from "../styles/Home.module.scss";
 import dynamic from "next/dynamic";
@@ -110,7 +110,7 @@ function Items({ w = 1, gap = 0.15 }) {
       damping={10}
       pages={(width - xW + urls.length * xW) / width}
     >
-      {/* <Minimap /> */}
+      <Minimap />
       <Scroll>
         {
           urls.map((url, i) => <Item key={i} index={i} position={[i * xW, 0, 0]} scale={[w, 1, 4]} url={url} />) /* prettier-ignore */
