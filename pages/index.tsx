@@ -20,61 +20,17 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home: NextPage = () => {
-  const titleRef = useRef(null);
-  const aboutRef = useRef(null);
   const [rehydration, setRehydration] = useState<boolean>(false);
 
   useEffect(() => {
-    // Title Animation
-    // setRehydration(true);
-
-    gsap.fromTo(
-      ".header",
-      {
-        opacity: 0,
-        y: 100,
-        duration: 1,
-      },
-      { opacity: 1, y: 0, duration: 1 }
-    );
-    gsap.to("#about", {
-      scrollTrigger: {
-        trigger: "#about",
-        // markers: true,
-        start: "-25%",
-        end: "-25%",
-        toggleActions: "play reverse",
-        onEnter: () =>
-          gsap.fromTo(
-            "#about",
-            {
-              opacity: 0,
-              x: 200,
-              duration: 1,
-            },
-            { opacity: 1, x: 0, duration: 1 }
-          ),
-        onEnterBack: () =>
-          gsap.fromTo(
-            "#about",
-            {
-              opacity: 1,
-              x: 0,
-              duration: 1,
-            },
-            { opacity: 0, x: 200, duration: 1 }
-          ),
-      },
-    });
-
     setRehydration(true);
-  }, []);
+  });
 
   if (!rehydration) {
     return null;
   } else
     return (
-      <div className={styles.container} ref={titleRef}>
+      <div className={styles.container}>
         <Head>
           <title>Max Gray Foundation</title>
           <meta name="title" content="Max Gray Foundation" />

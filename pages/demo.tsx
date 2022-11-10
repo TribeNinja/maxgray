@@ -7,12 +7,14 @@ import Image from "next/image";
 import main from "../public/max.jpg";
 import main2 from "../public/max2.jpg";
 import main3 from "../public/max3.jpg";
-import { gsap } from "gsap";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Countdown from "react-countdown";
 import { Suspense, useEffect, useRef, useState } from "react";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
 import Footer from "../Components/Footer";
 import Link from "next/link";
 import Gallery from "../Components/Gallery";
@@ -22,20 +24,20 @@ const Demo: NextPage = () => {
   const [rehydration, setRehydration] = useState<boolean>(false);
 
   const titleRef = useRef(null);
-  // const aboutRef = useRef(null);
+  const aboutRef = useRef(null);
 
   useEffect(() => {
     // Title Animation
-    gsap.fromTo(
-      ".header",
-      {
-        opacity: 0,
-        y: 100,
-        duration: 1,
-      },
-      { opacity: 1, y: 0, duration: 1 }
-    );
-    // // HeroSlogan
+    // gsap.fromTo(
+    //   ".header",
+    //   {
+    //     opacity: 0,
+    //     y: 100,
+    //     duration: 1,
+    //   },
+    //   { opacity: 1, y: 0, duration: 1 }
+    // );
+    //  // HeroSlogan
     // gsap.to("#about", {
     //   scrollTrigger: {
     //     trigger: "#about",
@@ -66,7 +68,8 @@ const Demo: NextPage = () => {
     //   },
     // });
     setRehydration(true);
-  }, [titleRef]);
+    // }, [titleRef, aboutRef]);
+  });
 
   if (!rehydration) {
     return null;
@@ -178,7 +181,7 @@ const Demo: NextPage = () => {
               </Link>
             </div>
           </section> */}
-          <section className={styles.section3}>
+          <section className={styles.section3} ref={aboutRef}>
             <div className={styles.canvasContainer}>
               <Suspense fallback={null}>
                 <Gallery />
