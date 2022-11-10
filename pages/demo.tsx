@@ -243,13 +243,13 @@ const Demo: NextPage = () => {
           </section>
           <section className={styles.section6}>
             <div className={styles.formLeft}>
-              <h1>How can we help you?</h1>
+              <h1>Join our community. Let's embrace life together.</h1>
               <p>Feel free to contact us whenever you want.</p>
             </div>
             <div className={styles.formRight}>
-              <p>
+              {/* <p>
                 Compulsary<span style={{ color: "#ff0000" }}>*</span>
-              </p>
+              </p> */}
               <form className={styles.formContainer}>
                 <div className={styles.formInputs}>
                   <input type="text" placeholder="Name" />

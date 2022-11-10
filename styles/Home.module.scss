@@ -143,7 +143,6 @@
   // background-image: url("/Background.jpg");
   background-size: contain;
   display: flex;
-  background-color: #bebebe;
   @media screen and (max-width: 1224px) {
     flex-direction: column-reverse;
     height: 100vh;
@@ -194,7 +193,7 @@
   .canvasContainer {
     width: 60vw;
     height: 100%;
-    background-color: #fff;
+    background-image: linear-gradient(to bottom, #000, #09183a);
     .canvas {
       width: 100%;
       height: 100vh;
@@ -227,7 +226,7 @@
       height: 100%;
       width: 50%;
       background-color: #fff;
-      color: #1d3c3d;
+      color: #09183a;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -339,7 +338,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #1d3c3d;
+    color: #09183a;
     @media screen and (max-width: 1224px) {
       width: 100%;
     }
@@ -411,7 +410,7 @@
           max-height: 20%;
           outline: none;
           text-indent: 20px;
-          color: #093a3a;
+          color: #09183a;
           line-height: 20px;
         }
         textarea[placeholder] {
@@ -440,7 +439,7 @@
         cursor: pointer;
       }
       input:active {
-        border: 1px solid #1d3c3d;
+        border: 1px solid #09183a;
         outline: none;
       }
     }

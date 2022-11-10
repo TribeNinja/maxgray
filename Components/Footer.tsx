@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
         <div>
           <h3>Social Handles</h3>
-          <div>
+          <div className={styles.socialContainer}>
             <AiFillInstagram size={30} />
             <AiOutlineWhatsApp size={30} />
             <AiTwotoneMail size={30} />
@@ -43,7 +43,12 @@ const Footer = () => {
         </div>
         <div className={styles.lastColumn}>
           <h3>Donate</h3>
-          {/* <Image src="./qrcode.png" /> */}
+          <Image
+            className={styles.imgWH}
+            src="/qrcode.png"
+            width="150%"
+            height="150%"
+          />
         </div>
       </div>
       <div className={styles.bottom}>
