@@ -236,8 +236,8 @@ const Demo: NextPage = () => {
               <Image
                 src="/qrcode.png"
                 className={styles.imgWH}
-                width={1920}
-                height={1080}
+                width="200%"
+                height="200%"
               />
             </div>
           </section>
