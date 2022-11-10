@@ -243,7 +243,7 @@ const Demo: NextPage = () => {
           </section>
           <section className={styles.section6}>
             <div className={styles.formLeft}>
-              <h1>Join our community. Let's embrace life together.</h1>
+              <h1>Join our community. Let us embrace life together.</h1>
               <p>Feel free to contact us whenever you want.</p>
             </div>
             <div className={styles.formRight}>
