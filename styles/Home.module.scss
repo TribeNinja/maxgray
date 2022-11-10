@@ -297,8 +297,9 @@
     }
   }
   .donateImg {
-    height: 15vh;
+    height: 80%;
     width: 25vw;
+    // background-color: #09183a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -306,8 +307,8 @@
       width: 100%;
     }
     .imgWH {
-      width: 80%;
-      // height: 100%;
+      // width: 80%;
+      height: 100%;
       border-radius: 10px;
       background-color: #e1dcca;
       color: #1d3c3d;
