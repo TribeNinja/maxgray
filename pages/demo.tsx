@@ -247,9 +247,6 @@ const Demo: NextPage = () => {
               <p>Feel free to contact us whenever you want.</p>
             </div>
             <div className={styles.formRight}>
-              {/* <p>
-                Compulsary<span style={{ color: "#ff0000" }}>*</span>
-              </p> */}
               <form className={styles.formContainer}>
                 <div className={styles.formInputs}>
                   <input type="text" placeholder="Name" />
