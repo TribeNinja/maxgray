@@ -26,7 +26,7 @@ const Footer = () => {
             layout="responsive"
           />
         </div>
-        <div>
+        <div className={styles.footerContact}>
           <h3>Contact</h3>
           <ul>
             <li>mgfoundation@gmail.com</li>

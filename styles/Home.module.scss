@@ -12,7 +12,6 @@
   @media screen and (max-width: 1224px) {
     width: 100vw;
     height: 100%;
-    overflow: hidden;
   }
 }
 
@@ -100,36 +99,10 @@
     background-position: 60% 0;
     padding: 0;
     background-color: #000000;
+    z-index: 1;
 
     @media screen and (max-width: 1224px) {
       width: 100vw;
-    }
-  }
-}
-
-.section2 {
-  height: 90vh;
-  width: 100%;
-  background-color: #f1f1f1;
-  padding: 10% 5%;
-  h1 {
-    margin: 0;
-    font-size: 3em;
-    color: #09183a;
-    @media screen and (max-width: 1224px) {
-      font-size: 1.5em;
-      text-align: center;
-    }
-  }
-  .cardContainer {
-    height: 90%;
-    width: 100%;
-    background-color: #e1dcca;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @media screen and (max-width: 1224px) {
-      flex-direction: column;
     }
   }
 }
@@ -142,7 +115,7 @@
   display: flex;
   @media screen and (max-width: 1224px) {
     flex-direction: column-reverse;
-    height: 100vh;
+    height: 120vh;
   }
 
   .aboutContainer {
@@ -156,7 +129,8 @@
     color: #000;
     @media screen and (max-width: 1224px) {
       width: 100vw;
-      padding: 5% 5%;
+      height: 100vh;
+      padding: 0% 5%;
     }
     .pButton {
       background-color: #09183a;
@@ -167,6 +141,9 @@
       border-radius: 10px;
       color: #f1f1f1;
       cursor: pointer;
+      @media screen and (max-width: 1224px) {
+        height: 10vh;
+      }
     }
     h1 {
       width: 100%;
@@ -191,6 +168,9 @@
     width: 60vw;
     height: 100%;
     background-image: linear-gradient(to bottom, #000, #09183a);
+    @media screen and (max-width: 1224px) {
+      width: 100%;
+    }
     .canvas {
       width: 100%;
       height: 100vh;
@@ -208,7 +188,7 @@
   padding: 0 5%;
   @media screen and (max-width: 1224px) {
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
   }
   .sectionWrapper {
     height: 60%;
@@ -264,6 +244,7 @@
   @media screen and (max-width: 1224px) {
     flex-direction: column;
     padding: 5%;
+    height: 100vh;
   }
   // padding: 0 5%;
   .donateText {
@@ -326,8 +307,8 @@
   padding: 0 5%;
   background-color: #f8fafb;
   @media screen and (max-width: 1224px) {
-    height: 100vh;
-    padding: 5%;
+    height: 80vh;
+    padding: 20% 5%;
     flex-direction: column;
   }
   .formLeft {
