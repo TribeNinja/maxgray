@@ -9,7 +9,7 @@ import MVision from "../Components/MVision";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const about = () => {
+const About = () => {
   useEffect(() => {
     AOS.init();
   });
@@ -158,4 +158,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

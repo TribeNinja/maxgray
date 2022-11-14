@@ -5,7 +5,7 @@ import styles from "../styles/Artwork.module.scss";
 import FsLightbox from "fslightbox-react";
 import Image from "next/image";
 
-const artwork = () => {
+const Artwork = () => {
   const [toggler, setToggler] = useState<boolean>(false);
   const [lightbox, setLightbox] = useState<number>();
   const imageArray = [
@@ -205,4 +205,4 @@ const artwork = () => {
   );
 };
 
-export default artwork;
+export default Artwork;
