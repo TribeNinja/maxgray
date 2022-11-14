@@ -73,7 +73,11 @@ const About = () => {
                 et est culpa et culpa duis.
               </p>
             </div>
-            <div className={styles.wRight}></div>
+            <div className={styles.wRight}>
+              <video autoPlay loop muted>
+                <source src="https://dl.dropboxusercontent.com/s/gwopcg0dtz09bce/o_O.mp4" />
+              </video>
+            </div>
           </div>
           {/* Stats */}
           <div className={styles.statisticContainer}>

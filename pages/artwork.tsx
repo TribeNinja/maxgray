@@ -8,6 +8,7 @@ import Image from "next/image";
 const Artwork = () => {
   const [toggler, setToggler] = useState<boolean>(false);
   const [lightbox, setLightbox] = useState<number>();
+
   const imageArray = [
     "https://dl.dropboxusercontent.com/s/mwq4nxk43yhxzl0/o_O.png",
     "https://dl.dropboxusercontent.com/s/gfi3dx5plnmfhvq/o_O.png",
