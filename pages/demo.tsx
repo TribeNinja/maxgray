@@ -190,7 +190,7 @@ const Demo: NextPage = () => {
             <div className={styles.aboutContainer} id="about">
               <h1>Artworks</h1>
               <p>
-                Max's artwork is a great reminder of what it means to be an
+                Max&apos;s artwork is a great reminder of what it means to be an
                 artist. We want to use this artwork for our Non profit
                 organization to remind us that even the smallest of us can make
                 a difference.
@@ -210,7 +210,7 @@ const Demo: NextPage = () => {
                   hole in the hearts of those who knew him best. It also
                   inspired us to do something positive with our grief; we
                   believe that by helping others through their loss we can honor
-                  Max's memory for years to come. The mission of Max Gray
+                  Max&apos;s memory for years to come. The mission of Max Gray
                   Foundation is to remember Max through our efforts to help
                   others who have suffered a loss like ours.
                 </p>
