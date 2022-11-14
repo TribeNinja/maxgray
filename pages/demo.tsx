@@ -188,13 +188,12 @@ const Demo: NextPage = () => {
               </Suspense>
             </div>
             <div className={styles.aboutContainer} id="about">
-              <h1>Lorem ipsum dolor sit amet.</h1>
+              <h1>Artworks</h1>
               <p>
-                Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-                reprehenderit enim labore culpa sint ad nisi Lorem pariatur
-                mollit ex esse exercitation amet. Nisi animcupidatat excepteur
-                officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip
-                amet voluptate voluptate dolor minim nulla est proident.
+                Max's artwork is a great reminder of what it means to be an
+                artist. We want to use this artwork for our Non profit
+                organization to remind us that even the smallest of us can make
+                a difference.
               </p>
               <Link href="artwork">
                 <p className={styles.pButton}>Check out his artworks </p>
@@ -204,20 +203,23 @@ const Demo: NextPage = () => {
           <section className={styles.section4}>
             <div className={styles.sectionWrapper}>
               <div className={styles.section4Left}>
-                <h1>Lorem ipsum dolor sit amet.</h1>
+                <h1>Max & You</h1>
+
                 <p>
-                  Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-                  reprehenderit enim labore culpa sint ad nisi Lorem pariatur
-                  mollit ex esse exercitation amet. Nisi animcupidatat excepteur
-                  officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip
-                  amet voluptate voluptate dolor minim nulla est proident.
+                  On [DATE] we lost Max at the age of [AGE]. His death left a
+                  hole in the hearts of those who knew him best. It also
+                  inspired us to do something positive with our grief; we
+                  believe that by helping others through their loss we can honor
+                  Max's memory for years to come. The mission of Max Gray
+                  Foundation is to remember Max through our efforts to help
+                  others who have suffered a loss like ours.
                 </p>
               </div>
               <div className={styles.section4Right}>
-                <MiniTag heading="Active Support" description="" />
-                <MiniTag heading="Free Functions" description="" />
-                <MiniTag heading="Quick Control" description="" />
-                <MiniTag heading="Simple Interface" description="" />
+                <MiniTag heading="Resources" description="" />
+                <MiniTag heading="Friendly Community" description="" />
+                <MiniTag heading="Activities" description="" />
+                <MiniTag heading="Comfort" description="" />
               </div>
             </div>
           </section>
@@ -225,11 +227,14 @@ const Demo: NextPage = () => {
             <div className={styles.donateText}>
               <h1>Ready to Donate?</h1>
               <p>
-                Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-                reprehenderit enim labore culpa sint ad nisi Lorem pariatur
-                mollit ex esse exercitation amet. Nisi anim cupidatat excepteur
-                officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip
-                amet voluptate voluptate dolor minim nulla est proident.
+                We provide care and support to families with children who have
+                life-threatening illnesses. Imagine having a safe place for
+                these families to gather, activities that help the kids feel
+                normal, and a community of support and resources to carry on
+                when our loved ones are gone. We want to help!
+              </p>
+              <p>
+                Help us raise money for Max Gray Foundation by donating today!
               </p>
             </div>
             <div className={styles.donateImg}>
