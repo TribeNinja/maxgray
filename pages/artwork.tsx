@@ -179,9 +179,9 @@ const Artwork = () => {
         <div className={styles.galleryContainer}>
           {imageArray.map((item, index) => {
             return (
-              <div>
+              <div key={index}>
                 <Image
-                  key={index}
+                  alt={item}
                   src={item}
                   width={"100%"}
                   height={"100%"}
