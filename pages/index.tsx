@@ -5,19 +5,11 @@ import Image from "next/image";
 import main from "../public/max.jpg";
 import main2 from "../public/max2.jpg";
 import main3 from "../public/max3.jpg";
-import { gsap } from "gsap";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Countdown from "react-countdown";
 
-import {
-  AiFillInstagram,
-  AiTwotoneMail,
-  AiOutlineWhatsApp,
-} from "react-icons/ai";
 import { Component, useEffect, useRef, useState } from "react";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-// gsap.registerPlugin(ScrollTrigger);
 
 const Home: NextPage = () => {
   const [rehydration, setRehydration] = useState<boolean>(false);

@@ -74,11 +74,16 @@ const Navbar = () => {
                 setToggle(!toggle);
               }}
             ></div>
-            <li>HOME</li>
-            <li>ABOUT US</li>
-            <li>SERVICES</li>
-            <li>CAREER</li>
-            <li>CONTACT</li>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/about">About Us</Link>
+            </li>
+            <li>Blog/Events</li>
+            <li>
+              <Link href="/artwork">Artwork</Link>
+            </li>
           </ul>
         </div>
       )}

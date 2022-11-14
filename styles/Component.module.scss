@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  background-color: #0f0f0f;
   @media screen and (max-width: 1224px) {
     display: none;
   }
@@ -61,6 +61,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 2;
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -112,6 +113,7 @@
 .burgerContainer {
   display: none;
   @media screen and (max-width: 1224px) {
+    z-index: 2;
     display: contents;
     height: 10vh;
     width: 100vw;
@@ -242,7 +244,7 @@
       font-weight: 100;
     }
     .socialContainer {
-      display:flex;
+      display: flex;
       justify-content: space-between;
     }
     .lastColumn {
