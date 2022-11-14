@@ -16,14 +16,12 @@ function Item({
   index,
   position,
   scale,
-  //   c = new THREE.Color(),
   url,
   ...props
 }: {
   index: any;
   position: any;
   scale: any;
-  //   c: any;
   url: any;
 }) {
   const ref = useRef<any>();

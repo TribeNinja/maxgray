@@ -9,7 +9,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Countdown from "react-countdown";
 
-import { Component, useEffect, useRef, useState } from "react";
+import { Component, useEffect, useState } from "react";
 
 const Home: NextPage = () => {
   const [rehydration, setRehydration] = useState<boolean>(false);

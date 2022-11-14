@@ -11,14 +11,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Countdown from "react-countdown";
 import { Suspense, useEffect, useRef, useState } from "react";
-
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
 import Footer from "../Components/Footer";
 import Link from "next/link";
 import Gallery from "../Components/Gallery";
-// gsap.registerPlugin(ScrollTrigger);
 
 const Demo: NextPage = () => {
   const [rehydration, setRehydration] = useState<boolean>(false);
@@ -27,48 +22,7 @@ const Demo: NextPage = () => {
   const aboutRef = useRef(null);
 
   useEffect(() => {
-    // Title Animation
-    // gsap.fromTo(
-    //   ".header",
-    //   {
-    //     opacity: 0,
-    //     y: 100,
-    //     duration: 1,
-    //   },
-    //   { opacity: 1, y: 0, duration: 1 }
-    // );
-    //  // HeroSlogan
-    // gsap.to("#about", {
-    //   scrollTrigger: {
-    //     trigger: "#about",
-    //     markers: true,
-    //     start: "-25%",
-    //     end: "-25%",
-    //     toggleActions: "play reverse",
-    //     onEnter: () =>
-    //       gsap.fromTo(
-    //         "#about",
-    //         {
-    //           opacity: 0,
-    //           x: 200,
-    //           duration: 1,
-    //         },
-    //         { opacity: 1, x: 0, duration: 1 }
-    //       ),
-    //     onEnterBack: () =>
-    //       gsap.fromTo(
-    //         "#about",
-    //         {
-    //           opacity: 1,
-    //           x: 0,
-    //           duration: 1,
-    //         },
-    //         { opacity: 0, x: 200, duration: 1 }
-    //       ),
-    //   },
-    // });
     setRehydration(true);
-    // }, [titleRef, aboutRef]);
   }, [rehydration]);
 
   if (!rehydration) {
@@ -173,14 +127,6 @@ const Demo: NextPage = () => {
               </Carousel>
             </div>
           </section>
-          {/* <section className={styles.section2}>
-            <h1>Get to know more about Max.</h1>
-            <div className={styles.cardContainer}>
-              <Link href="/about">
-                <h1>Know More</h1>
-              </Link>
-            </div>
-          </section> */}
           <section className={styles.section3} ref={aboutRef}>
             <div className={styles.canvasContainer}>
               <Suspense fallback={null}>
