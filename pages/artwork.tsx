@@ -181,6 +181,7 @@ const Artwork = () => {
             return (
               <div>
                 <Image
+                  key={index}
                   src={item}
                   width={"100%"}
                   height={"100%"}
