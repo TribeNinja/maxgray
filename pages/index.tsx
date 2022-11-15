@@ -72,8 +72,8 @@ const Home: NextPage = () => {
                 We are excited to announce the launch of Max Gray foundation.
               </h3>
               <div className={styles.heroButtonContainer}>
-                <button>Stay tuned! We are already in development.</button>
-                <Countdown date="2022-11-16T00:00:00"></Countdown>
+                {/* <button>Stay tuned! We are already in development.</button>
+                <Countdown date="2022-11-16T00:00:00"></Countdown> */}
                 {/* <button>Know More</button> */}
               </div>
             </div>
