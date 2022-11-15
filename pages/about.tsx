@@ -60,8 +60,8 @@ const About = () => {
             <div className={styles.wLeft}>
               <h1>Welcome to Max Gray Foundation</h1>
               <p>
-                We're so glad you found us. We are a non-profit organization
-                dedicated to helping people
+                We&apos;re so glad you found us. We are a non-profit
+                organization dedicated to helping people
               </p>
             </div>
             <div className={styles.wRight}>
