@@ -15,7 +15,7 @@ import Footer from "../Components/Footer";
 import Link from "next/link";
 import Gallery from "../Components/Gallery";
 
-const Demo: NextPage = () => {
+const Home: NextPage = () => {
   const [rehydration, setRehydration] = useState<boolean>(false);
 
   const titleRef = useRef(null);
@@ -216,4 +216,4 @@ const Demo: NextPage = () => {
   }
 };
 
-export default Demo;
+export default Home;
