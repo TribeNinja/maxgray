@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import styles from "../styles/Component.module.scss";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState<boolean>(false);
+  const [donate, setDonate] = useState<boolean>(false);
+
   return (
     <>
       <div className={styles.navContainer} id="desktopNav">
@@ -26,8 +29,14 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className={styles.loginContainer}>
-          <p>Donate Now</p>
+        <div className={styles.donateContainer}>
+          <p
+            onClick={() => {
+              setDonate(!donate);
+            }}
+          >
+            Donate Now
+          </p>
         </div>
       </div>
       <div
@@ -63,6 +72,24 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+      )}
+      {donate && (
+        <>
+          <div className={styles.donatePopup}>
+            <Image
+              src="https://dl.dropboxusercontent.com/s/slmzgae2cztd069/o_O.png"
+              width="200%"
+              height="200%"
+            />
+            <h1
+              onClick={() => {
+                setDonate(!donate);
+              }}
+            >
+              Close
+            </h1>
+          </div>
+        </>
       )}
     </>
   );

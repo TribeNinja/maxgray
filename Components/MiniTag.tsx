@@ -8,7 +8,6 @@ const MiniTag = ({ ...props }) => {
       <div className={styles.miniHeading}>
         <AiFillStar size={40} />
         <h1>{props.heading}</h1>
-        <p>Contact us at mgfoundation@gmail.com</p>
       </div>
     </div>
   );

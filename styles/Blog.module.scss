@@ -5,6 +5,9 @@
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(to bottom, #09183a, #000);
+  @media screen and (max-width: 1224px) {
+    flex-direction: column-reverse;
+  }
 }
 .blogSection {
   height: 90%;
@@ -17,10 +20,19 @@
   justify-content: space-between;
   align-items: center;
   overflow: auto;
+  @media screen and (max-width: 1224px) {
+    width: 100%;
+    padding: 0.5% 2.5%;
+    margin-top: 5%;
+  }
 }
 .eventSection {
   margin-top: 10vh;
   height: 80%;
   width: 20%;
   padding: 0 5%;
+  @media screen and (max-width: 1224px) {
+    height: 30%;
+    width: 100%;
+  }
 }

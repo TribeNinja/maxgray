@@ -60,10 +60,10 @@
   align-items: center;
   justify-content: space-around;
   background-color: #050d20;
-  @media screen and (max-width: 1224px) {
-    height: 50vh;
-    flex-direction: column;
-  }
+  // @media screen and (max-width: 1224px) {
+  //   height: 50vh;
+  //   flex-direction: column;
+  // }
   .statWrapper {
     display: flex;
     justify-content: space-around;
