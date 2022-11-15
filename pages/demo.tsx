@@ -185,7 +185,7 @@ const Demo: NextPage = () => {
             </div>
             <div className={styles.donateImg}>
               <Image
-                src="/qrcode.png"
+                src="https://dl.dropboxusercontent.com/s/slmzgae2cztd069/o_O.png"
                 className={styles.imgWH}
                 width="200%"
                 height="200%"

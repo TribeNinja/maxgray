@@ -133,63 +133,6 @@
   }
 }
 
-//Card Styles
-.cardContainer {
-  height: 70%;
-  width: 30%;
-  background-color: #000;
-  display: flex;
-  box-shadow: 2px 2px 5px #000;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: 0.3s ease-in-out all;
-  @media screen and (max-width: 1224px) {
-    width: 80%;
-    margin: 5%;
-  }
-  .left {
-    height: 100%;
-    width: 60%;
-    background-color: #fff;
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: #525760;
-    .tagline {
-      height: 10%;
-      min-width: 20%;
-      background-color: #09183a;
-      border-radius: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1em;
-      color: #e1dcca;
-      @media screen and (max-width: 1224px) {
-        height: 20%;
-      }
-    }
-    .title {
-      font-size: 1.2em;
-    }
-  }
-  .right {
-    // display: flex;
-    // align-items: flex-end;
-    background-color: #fff;
-    width: 40%;
-    display: cover;
-    img {
-      width: 100%;
-      left: 0;
-    }
-  }
-}
-.cardContainer:hover {
-  scale: 1.05;
-}
-
 .Minitag {
   height: 100%;
   width: 100%;
@@ -251,13 +194,14 @@
         height: 100%;
         width: 100%;
         text-align: center;
-        border-top: 1px solid #e1dcca;
+        // border-top: 1px solid #e1dcca;
       }
     }
 
     h3 {
       color: #e1dcca;
       @media screen and (max-width: 1224px) {
+        margin-bottom: 0;
         width: 100%;
         text-align: center;
       }
@@ -322,4 +266,31 @@
     align-items: center;
     color: #e1dcca;
   }
+}
+
+.blogItemContainer {
+  height: 20vh;
+  width: 100%;
+  background-color: #e1dcca;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin: 2.5% 0;
+  transition: scale 0.3s;
+  cursor: pointer;
+  box-shadow: 2px 2px #1d1d1d;
+  .blogText {
+    padding: 0 5%;
+    color: #1d1d1d;
+  }
+  .blogItemImage {
+    height: 100%;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 0 10px 10px 0;
+  }
+}
+.blogItemContainer:hover {
+  scale: 0.9;
 }
