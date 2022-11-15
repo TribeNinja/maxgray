@@ -72,7 +72,7 @@ const About = () => {
           </div>
           {/* Stats */}
           <div className={styles.statisticContainer}>
-            <div className={styles.statWrapper}>
+            {/* <div className={styles.statWrapper}>
               <div className={styles.stat}>
                 <RiCommunityFill size={50} color={"#000"} />
               </div>
@@ -98,7 +98,7 @@ const About = () => {
                 <h1>12345</h1>
                 <p>Our Team</p>
               </div>
-            </div>
+            </div> */}
           </div>
           {/* Become a volunteer */}
           <div className={styles.volunteerContainer}>

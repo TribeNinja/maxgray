@@ -37,15 +37,26 @@
       align-items: center;
       font-weight: 500;
       color: #e1dcca;
+      li {
+        transition: scale 0.3s;
+      }
+      li:hover {
+        scale: 0.9;
+      }
     }
   }
-  .loginContainer {
+  .donateContainer {
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     p {
       color: #e1dcca;
+      cursor: pointer;
+      transition: scale 0.3s;
+    }
+    p:hover {
+      scale: 0.9;
     }
   }
 }
@@ -118,7 +129,7 @@
     display: contents;
     height: 10vh;
     width: 100vw;
-    position: fixed;
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,7 +137,7 @@
   }
   .line {
     height: 10%;
-    background-color: #09183a;
+    background-color: #e1dcca;
     width: 20%;
     margin: 1% 0;
     border-radius: 10px 0px 0px 10px;
@@ -136,9 +147,10 @@
 .Minitag {
   height: 100%;
   width: 100%;
-  // background-color: olive;
   padding: 5%;
   @media screen and (max-width: 1224px) {
+    display: flex;
+    justify-content: space-between;
     scale: 0.9;
     padding: 0%;
   }
@@ -149,6 +161,9 @@
     font-size: 1em;
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 1224px) {
+      width: 50%;
+    }
     p {
       @media screen and (max-width: 1224px) {
         // font-size: 2em;
@@ -293,4 +308,26 @@
 }
 .blogItemContainer:hover {
   scale: 0.9;
+}
+.donatePopup {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000c2;
+  position: fixed;
+  z-index: 21;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    border-radius: 20px;
+  }
+  h1 {
+    cursor: pointer;
+    font-weight: 100;
+    transition: scale 0.3s;
+  }
+  h1:hover {
+    scale: 0.9;
+  }
 }
