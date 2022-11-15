@@ -45,7 +45,7 @@ const Footer = () => {
           <h3>Donate</h3>
           <Image
             className={styles.imgWH}
-            src="/qrcode.png"
+            src="https://dl.dropboxusercontent.com/s/slmzgae2cztd069/o_O.png"
             width="150%"
             height="150%"
           />

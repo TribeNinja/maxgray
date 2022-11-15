@@ -7,6 +7,7 @@ import { RiCommunityFill, RiTeamFill } from "react-icons/ri";
 import { MdVolunteerActivism } from "react-icons/md";
 import MVision from "../Components/MVision";
 import AOS from "aos";
+import Image from "next/image";
 import "aos/dist/aos.css";
 
 const About = () => {
@@ -153,7 +154,15 @@ const About = () => {
               <MVision title={click} description={desc} />
               <button onClick={handleClick}>Our {button}</button>
             </div>
-            <div className={styles.missionImage}></div>
+            <div className={styles.missionImage}>
+              <div className={styles.theImage}>
+                <Image
+                  src="https://dl.dropboxusercontent.com/s/lz7s48kqkolwmn2/o_O.jpg"
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </main>
