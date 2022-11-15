@@ -60,18 +60,8 @@ const About = () => {
             <div className={styles.wLeft}>
               <h1>Welcome to Max Gray Foundation</h1>
               <p>
-                Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-                reprehenderit enim labore culpa sint ad nisi Lorem pariatur
-                mollit ex esse exercitation amet. Nisi animcupidatat excepteur
-                officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip
-                amet voluptate voluptate dolor minim nulla est proident. Nostrud
-                officia pariatur ut officia. Sit irure elit esse ea nulla sunt
-                ex occaecat reprehenderit commodo officia dolor Lorem duis
-                laboris cupidatat officia voluptate. Culpa proident adipisicing
-                id nulla nisi laboris ex in Lorem sunt duis officia eiusmod.
-                Aliqua reprehenderit commodo ex non excepteur duis sunt velit
-                enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur
-                et est culpa et culpa duis.
+                We're so glad you found us. We are a non-profit organization
+                dedicated to helping people
               </p>
             </div>
             <div className={styles.wRight}>
@@ -131,18 +121,10 @@ const About = () => {
               data-aos-mirror="true"
               data-aos-duration="500"
             >
-              Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-              reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
-              ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
-              Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet
-              voluptate voluptate dolor minim nulla est proident. Nostrud
-              officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex
-              occaecat reprehenderit commodo officia dolor Lorem duis laboris
-              cupidatat officia voluptate. Culpa proident adipisicing id nulla
-              nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua
-              reprehenderit commodo ex non excepteur duis sunt velit enim.
-              Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
-              culpa et culpa duis.
+              We are currently looking for volunteers to help with our outreach
+              efforts. If you have experience in marketing or public relations,
+              we would love to have your help spreading the word about our
+              organization!
             </p>
             <button>
               <h2>Join Now</h2>
