@@ -6,11 +6,11 @@
 .banner {
   height: 20vh;
   width: inherit;
-  background-color: #050d20;
+  background-color: #0d0d0d;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  color: #e1dcca;
+  color: #0047ab;
   @media screen and (max-width: 1224px) {
     align-items: center;
   }
@@ -22,7 +22,7 @@
   align-items: center;
   justify-content: center;
   color: #e1dcca;
-  background-color: #050d20;
+  background-color: #0d0d0d;
   @media screen and (max-width: 1224px) {
     height: 100%;
     flex-direction: column-reverse;
@@ -59,7 +59,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #050d20;
+  background-color: #0d0d0d;
   // @media screen and (max-width: 1224px) {
   //   height: 50vh;
   //   flex-direction: column;
@@ -112,7 +112,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #09183a;
+  color: #0047ab;
   background-color: #e1dcca;
   @media screen and (max-width: 1224px) {
     padding: 0 5%;
@@ -120,6 +120,7 @@
 
   p {
     width: 40%;
+    color: #0d0d0d;
     text-align: justify;
     text-align-last: center;
     @media screen and (max-width: 1224px) {
@@ -133,7 +134,7 @@
   button {
     height: 15%;
     width: 40%;
-    background-color: #050d20;
+    background-color: #0047ab;
     border: 0px;
     border-radius: 10px;
     cursor: pointer;
@@ -153,8 +154,12 @@
   width: 100%;
   display: flex;
   padding: 5%;
-  background-color: #050d20;
+  background-color: #0047ab;
   z-index: 1;
+  h1 {
+    color: #e1dcca;
+  }
+
   @media screen and (max-width: 1224px) {
     flex-direction: column;
     padding: 0;

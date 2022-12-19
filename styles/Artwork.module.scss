@@ -1,7 +1,7 @@
 .artworkContainer {
   // height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(to bottom, #09183a, #000);
+  background-color: #0d0d0d;
   overflow: auto;
   display: flex;
   flex-direction: column;
@@ -13,12 +13,12 @@
   .banner {
     height: 20vh;
     width: inherit;
-    background-color: #050d20;
+    // background-color: #0047ab;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     //   padding: 5% 0;
-    color: #e1dcca;
+    color: #0047ab;
     @media screen and (max-width: 1224px) {
       align-items: center;
     }

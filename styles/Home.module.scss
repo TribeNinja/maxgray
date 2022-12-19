@@ -17,8 +17,9 @@
 
 .section1 {
   height: 100vh;
+  padding-top: 10vh;
   width: 100%;
-  background-image: linear-gradient(to bottom, #09183a, #000);
+  background-image: linear-gradient(to bottom, #0047ab, #002252);
   display: flex;
 
   @media screen and (max-width: 1224px) {
@@ -98,7 +99,6 @@
     overflow: hidden;
     background-position: 60% 0;
     padding: 0;
-    background-color: #000000;
     z-index: 1;
 
     @media screen and (max-width: 1224px) {
@@ -127,14 +127,14 @@
     justify-content: center;
     background-color: #e1dcca;
     padding: 5%;
-    color: #000;
+    color: #0d0d0d;
     @media screen and (max-width: 1224px) {
       width: 100vw;
       height: 100vh;
       padding: 0% 5%;
     }
     .pButton {
-      background-color: #09183a;
+      background-color: #0047ab;
       height: 10%;
       display: flex;
       justify-content: center;
@@ -150,7 +150,7 @@
       width: 100%;
       font-size: 3em;
       margin: 0;
-      color: #09183a;
+      color: #0047ab;
       @media screen and (max-width: 1224px) {
         font-size: 2em;
         width: 100%;
@@ -168,7 +168,7 @@
   .canvasContainer {
     width: 60vw;
     height: 100%;
-    background-image: linear-gradient(to bottom, #000, #09183a);
+    background-image: linear-gradient(to bottom, #002252, #0047ab);
     @media screen and (max-width: 1224px) {
       width: 100%;
     }
@@ -203,7 +203,7 @@
     .section4Left {
       height: 100%;
       width: 50%;
-      color: #09183a;
+      color: #0047ab;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -219,6 +219,7 @@
       p {
         font-size: 1.5em;
         text-align: justify;
+        color: #0d0d0d;
       }
     }
     .section4Right {
@@ -238,7 +239,7 @@
 .section5 {
   height: 60vh;
   width: 100%;
-  background-image: linear-gradient(to bottom, #09183a, #000);
+  background-image: linear-gradient(to bottom, #0047ab, #002252);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -318,7 +319,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #09183a;
+    color: #0047ab;
     @media screen and (max-width: 1224px) {
       width: 100%;
     }
@@ -412,7 +413,8 @@
         text-indent: 20px;
         border-radius: 10px;
         height: 20%;
-        background-color: #09183a;
+        border: 0px solid #0047ab;
+        background-color: #0047ab;
         outline: none;
         color: #093a3a;
       }
@@ -422,7 +424,7 @@
         cursor: pointer;
       }
       input:active {
-        border: 1px solid #09183a;
+        border: 1px solid #0047ab;
         outline: none;
       }
     }

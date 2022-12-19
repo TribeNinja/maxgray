@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to bottom, #09183a, #000);
+  background-color: #0d0d0d;
   @media screen and (max-width: 1224px) {
     flex-direction: column-reverse;
   }
@@ -31,6 +31,7 @@
   height: 80%;
   width: 20%;
   padding: 0 5%;
+  color: #0047ab;
   @media screen and (max-width: 1224px) {
     height: 30%;
     width: 100%;
